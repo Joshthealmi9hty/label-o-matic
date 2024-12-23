@@ -9,12 +9,12 @@ This is a full-stack web application for labeling images. It uses SQLite for the
 npm run start:server
 ```
 
-2. Start the frontend development server (runs on port 8080):
+2. Start the frontend development server (runs on port 3000):
 ```bash
 npm run dev
 ```
 
-3. Open your browser and navigate to http://localhost:8080
+3. Open your browser and navigate to http://localhost:3000
 
 ## Features
 
