@@ -6,16 +6,15 @@ This is a full-stack web application for labeling images. It uses SQLite for the
 
 1. Start the backend server (runs on port 5000):
 ```bash
-cd src/server
-ts-node server.ts
+npm run start:server
 ```
 
-2. Start the frontend development server (runs on port 3000):
+2. Start the frontend development server (runs on port 8080):
 ```bash
 npm run dev
 ```
 
-3. Open your browser and navigate to http://localhost:3000
+3. Open your browser and navigate to http://localhost:8080
 
 ## Features
 
@@ -24,6 +23,7 @@ npm run dev
 - Clean, responsive interface
 - Toast notifications for feedback
 - Support for future text content
+- Manually reset image database using npm run reset-db (do this before starting servers)
 
 ## Tech Stack
 
