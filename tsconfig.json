@@ -1,19 +1,32 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ],
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
+    "files": [],
+    "references": [
+      { "path": "./tsconfig.app.json" },
+      { "path": "./tsconfig.node.json" }
+    ],
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "NodeNext",
+      "moduleResolution": "NodeNext",
+      "esModuleInterop": true,
+      "strict": true,
+      "skipLibCheck": true,
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "noImplicitAny": false,
+      "noUnusedParameters": false,
+      "allowJs": true,
+      "noUnusedLocals": false,
+      "strictNullChecks": false,
+      "resolveJsonModule": true,
+      "composite": true,
+      "noEmit": false,
     },
-    "noImplicitAny": false,
-    "noUnusedParameters": false,
-    "skipLibCheck": true,
-    "allowJs": true,
-    "noUnusedLocals": false,
-    "strictNullChecks": false
+    "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
   }
-}
+
